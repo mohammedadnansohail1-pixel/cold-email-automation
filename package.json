@@ -10,7 +10,12 @@
     "build": "cd client && npm run build",
     "start": "node server/index.js",
     "db:migrate": "node server/database/migrate.js",
-    "db:seed": "node server/database/seed.js"
+    "db:seed": "node server/database/seed.js",
+    "db:reset": "node scripts/dev-tools.js reset",
+    "db:stats": "node scripts/dev-tools.js stats",
+    "setup": "bash scripts/setup.sh",
+    "test:api": "bash scripts/test-api.sh",
+    "tools": "node scripts/dev-tools.js"
   },
   "keywords": ["cold-email", "automation", "ai", "sales", "outreach"],
   "author": "",
